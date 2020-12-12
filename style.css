@@ -1,39 +1,49 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 * { margin: 0; padding: 0; }
 body {
-    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
-    background-size: 400% 400%;
-    animation: gradient 4s ease infinite;
-    background-repeat: no-repeat;
     font-family: 'Roboto', sans-serif;
     color: white;
+    user-select: none;
+    text-shadow: -1px -3px 18px rgba(150, 150, 150, 1);
 }
-@keyframes gradient {
-	0% {
-		background-position: 0% 50%;
-	}
-	50% {
-		background-position: 100% 50%;
-	}
-	100% {
-		background-position: 0% 50%;
-	}
-}
+
 .container {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
+    position: absolute;
+	top: 10px;
+	width: 100%;
+	text-align: center;
+	z-index: 100;
+	display:block;
 }
-i {
-    font-size: xx-large;
-    padding-right: 50px;
+
+.footer {
+    position: absolute;
+	top: 85%;
+	width: 100%;
+	text-align: center;
+	z-index: 100;
+	display:block;
 }
-i:hover {
-    color: steelblue;
-    cursor: pointer;
+
+.links {
+    list-style: none;
 }
-a:visited {
+
+.links>li {
+    display: inline;
+    padding: 5px;
+}
+
+.links>li>a {
+    text-decoration: none;
+    color: white;
+    font-size: 32px;
+}
+
+.links>li>a>i:hover {
+    color: red;
+}
+
+.links>li>a:visited {
     color: white;
 }
