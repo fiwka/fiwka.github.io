@@ -1,49 +1,129 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
 * { margin: 0; padding: 0; }
+
+:root {
+    scroll-behavior: smooth;
+}
+
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     color: white;
     user-select: none;
     text-shadow: -1px -3px 18px rgba(150, 150, 150, 1);
+    background: #33322f;
+    font-size: 18px;
 }
 
-.container {
-    position: absolute;
-	top: 10px;
-	width: 100%;
-	text-align: center;
-	z-index: 100;
-	display:block;
+main {
+    transition: .2s;
 }
 
-.footer {
-    position: absolute;
-	top: 85%;
-	width: 100%;
-	text-align: center;
-	z-index: 100;
-	display:block;
-}
-
-.links {
+.navbar {
     list-style: none;
+    padding: 20px;
 }
 
-.links>li {
+.navbar>li {
+    padding: 20px;
     display: inline;
-    padding: 5px;
 }
 
-.links>li>a {
+.navbar>li>a {
     text-decoration: none;
     color: white;
+    transition: .2s;
+}
+
+.navbar>li>a:visited {
+    color: white;
+}
+
+.navbar>li>a:hover {
+    color: rgb(212, 209, 209);
+    cursor: pointer;
+}
+
+#social {
+    width: 100%;
+    height: 880px;
+    background: url('https://upload.wikimedia.org/wikipedia/commons/5/57/The_Flower_Fields_flowers.jpg') no-repeat;
+    background-size: cover;
+    filter: sepia(20%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+#skills {
+    width: 100%;
+    height: 900px;
+    background: url('https://oceanfdn.org/wp-content/uploads/2010/08/SargassoSea.jpg') no-repeat;
+    background-size: cover;
+    filter: sepia(20%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 12px;
     font-size: 32px;
 }
 
-.links>li>a>i:hover {
-    color: red;
+footer {
+    width: 100%;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 12px;
+    font-size: 32px;
 }
 
-.links>li>a:visited {
+#links>a {
+    font-size: 48px;
+    padding: 20px;
     color: white;
+    text-decoration: none;
+}
+
+#links>a:visited {
+    color: white;
+}
+
+#links>a:hover {
+    color: rgb(212, 209, 209);
+    cursor: pointer;
+}
+
+#links>a:active {
+    color: rgb(170, 169, 169);
+}
+
+.navbar>li>a:active {
+    color: rgb(170, 169, 169);
+}
+
+.btn {
+    padding: 20px;
+    margin: 10px;
+    border-radius: 32px;
+    transition: .2s;
+}
+
+.btn:hover {
+    background: rgb(212, 209, 209);
+}
+
+.btn:active {
+    background: rgb(170, 169, 169);
+}
+
+.btn:focus {
+    outline: none;
+    border: none;
 }
