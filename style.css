@@ -11,7 +11,7 @@ body {
     color: white;
     user-select: none;
     text-shadow: -1px -3px 18px rgba(150, 150, 150, 1);
-    background: #33322f;
+    background: #181716;
     font-size: 18px;
 }
 
@@ -25,29 +25,42 @@ main {
 }
 
 .navbar>li {
-    padding: 20px;
+    padding: 5px;
     display: inline;
 }
 
-.navbar>li>a {
+.about-page {
+    width: 100vw;
+    height: 100vh;
+    background: #272525;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-page-content {
+    text-align: center;
+}
+
+a {
     text-decoration: none;
     color: white;
     transition: .2s;
 }
 
-.navbar>li>a:visited {
+a:visited {
     color: white;
 }
 
-.navbar>li>a:hover {
+a:hover {
     color: rgb(212, 209, 209);
     cursor: pointer;
 }
 
-#social {
-    width: 100%;
-    height: 880px;
-    background: url('https://upload.wikimedia.org/wikipedia/commons/5/57/The_Flower_Fields_flowers.jpg') no-repeat;
+.content-block {
+    width: 100vw;
+    height: 100vh;
+    background: url('giphy.gif') no-repeat;
     background-size: cover;
     filter: sepia(20%);
     display: flex;
@@ -58,30 +71,10 @@ main {
     gap: 12px;
 }
 
-#skills {
-    width: 100%;
-    height: 900px;
-    background: url('https://oceanfdn.org/wp-content/uploads/2010/08/SargassoSea.jpg') no-repeat;
-    background-size: cover;
-    filter: sepia(20%);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    flex-wrap: wrap;
-    gap: 12px;
-    font-size: 32px;
-}
-
-footer {
-    width: 100%;
-    height: 300px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    gap: 12px;
-    font-size: 32px;
+@media screen and (max-width: 425px) {
+    h1 {
+        font-size: 26px;
+    }
 }
 
 #links>a {
